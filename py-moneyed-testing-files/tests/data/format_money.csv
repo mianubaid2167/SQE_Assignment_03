@@ -1,0 +1,11 @@
+test_id,amount,currency,locale,format_type,expected
+zero_usd,0,USD,en_US,standard,$0.00
+small_usd,0.01,USD,en_US,standard,$0.01
+below_thousand,999.99,USD,en_US,standard,$999.99
+thousand_boundary,1000,USD,en_US,standard,"$1,000.00"
+one_million,1000000,USD,en_US,standard,"$1,000,000.00"
+euro,1000000,EUR,en_US,standard,"€1,000,000.00"
+negative_standard,-5,USD,en_US,standard,-$5.00
+negative_accounting,-5,USD,en_US,accounting,($5.00)
+long_name,5,USD,en_US,name,5.00 US dollars
+yen_no_decimals,500,JPY,en_US,standard,¥500

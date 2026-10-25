@@ -1,0 +1,11 @@
+test_id,code,iso,expected_code,expected_error
+usd_by_code,USD,,USD,
+eur_by_code,EUR,,EUR,
+pkr_by_code,PKR,,PKR,
+usd_by_iso_number,,840,USD,
+pkr_by_iso_string,,586,PKR,
+lowercase_code,usd,,,CurrencyDoesNotExist
+unknown_code,ABC,,,CurrencyDoesNotExist
+too_short_code,US,,,CurrencyDoesNotExist
+too_long_code,USDD,,,CurrencyDoesNotExist
+unknown_iso,,99999,,CurrencyDoesNotExist
